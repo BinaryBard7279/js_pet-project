@@ -1,0 +1,27 @@
+{
+  "name": "js_pet-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BinaryBard7279/js_pet-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BinaryBard7279/js_pet-project/issues"
+  },
+  "homepage": "https://github.com/BinaryBard7279/js_pet-project#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "faker": "^6.6.6",
+    "hbs": "^4.2.0"
+  }
+}
