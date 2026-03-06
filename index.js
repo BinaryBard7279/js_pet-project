@@ -13,5 +13,17 @@ app.listen(port, ()=>{
 })
 
 app.get(`/`, (req, res)=>{
-    res.send(`dfgd`)
+    res.render(`index`)
+})
+
+app.get(`/list`, (req, res)=>{
+    res.render(`list`)
+})
+
+app.get(`/item`, (req, res)=>{
+    res.render(`item`)
+})
+
+app.use((req, res)=>{
+    res.status(404).render(`404`)
 })
