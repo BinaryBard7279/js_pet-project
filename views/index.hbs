@@ -5,16 +5,45 @@
     <link href="/css/style.css" rel="stylesheet">
     <script src="/js/handlebars.min.js"></script>
 </head>
-<body class="bg-custom1 container-fluid">
-    <div class="header d-flex py-3 px-3 align-items-center">
-
-        <div class="logo" href="#">{NULLPTR} </div>
-        <div class="navbar-nav ms-auto d-flex flex-row gap-3">
-            <a class="nav-link vacancies" href="#">ВСЕ ВАКАНСИИ</a>
-            <a class="nav-link for-companies">ДЛЯ КОМПАНИЙ</a>
+<body class="bg-custom1 container-fluid p-0"> 
+    
+    <div class="header d-flex py-3 px-4 align-items-center">
+        <a class="logo text-decoration-none text-reset fw-bold fs-4" href="#">{NULLPTR}</a>
+        <div class="navbar-nav ms-auto d-flex flex-row gap-4">
+            <a class="nav-link vacancies fw-bold text-dark text-decoration-none" href="#">ВСЕ ВАКАНСИИ</a>
+            <a class="nav-link for-companies fw-bold text-dark text-decoration-none" href="#">ДЛЯ КОМПАНИЙ</a>
         </div>
-        
     </div>
+
+    <hr class="border-top border-dark border-4 opacity-100 m-0">
+
+    <section class="hero-section">
+        <div class="row g-0">
+            
+            <div class="col-lg-8 hero-content py-5 px-5 d-flex flex-column justify-content-center">
+                
+                <h1 class="hero-title display-1 fw-bold text-uppercase lh-1 mb-4">
+                    Пиши код.<br>
+                    Не пиши<br>
+                    <span class="text-danger">отписки.</span>
+                </h1>
+                
+                <p class="hero-description fs-5 mb-5 w-75 text-secondary">
+                    Платформа поиска работы для инженеров. Проверенные вакансии с прямыми контактами, открытыми вилками и прозрачным этапом отбора.
+                </p>
+
+                <div>
+                    <a href="#" class="btn btn-danger rounded-0 border-0 px-5 py-3 fw-bold text-uppercase js-scroll-vacancies">
+                        Смотреть вакансии
+                    </a>
+                </div>
+
+            </div> 
+            <div class="col-lg-4 hero-visual bg-dark d-flex flex-column align-items-center justify-content-center" style="min-height: 70vh;">
+                <div class="display-1 text-danger fw-bold mb-4 lh-1">*</div>
+                <code class="text-white fs-5">while(alive) { code(); }</code>
+            </div> 
+    </section>
 
     <hr class="border-top border-dark border-4 opacity-100 m-0">
 
