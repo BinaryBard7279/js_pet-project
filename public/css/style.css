@@ -1,3 +1,37 @@
+:root {
+    --bg-color: #F4F3EF;
+    --accent-color: #D94833;
+    --text-color: #121212;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.brand-font {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.btn, .card-brutal {
+    box-shadow: 4px 4px 0px 0px var(--text-color);
+}
+
+.btn-danger {
+    background-color: var(--accent-color) !important;
+    border-color: var(--text-color) !important;
+}
+
 .bg-custom1 {
-    background-color: #f4f3ef;
+    background-color: var(--bg-color);
+}
+
+.magazine-col {
+    border-right: 2px solid var(--text-color);
+    padding: 3rem;
 }
