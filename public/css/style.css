@@ -8,6 +8,8 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'Plus Jakarta Sans', sans-serif;
+    min-width: 1200px; /* Жесткий десктоп */
+    overflow-x: auto;
 }
 
 .brand-font {
@@ -18,8 +20,24 @@ body {
     color: var(--accent-color) !important;
 }
 
-.btn, .card-brutal {
-    box-shadow: 4px 4px 0px 0px var(--text-color);
+.bg-custom1 {
+    background-color: var(--bg-color);
+}
+
+.brutal-border {
+    border: 2px solid var(--text-color) !important;
+}
+
+.brutal-border-bottom {
+    border-bottom: 2px solid var(--text-color) !important;
+}
+
+.brutal-border-end {
+    border-right: 2px solid var(--text-color) !important;
+}
+
+.btn, .card-brutal, .brutal-shadow {
+    box-shadow: 4px 4px 0px 0px var(--text-color) !important;
 }
 
 .btn-danger {
@@ -27,8 +45,16 @@ body {
     border-color: var(--text-color) !important;
 }
 
-.bg-custom1 {
-    background-color: var(--bg-color);
+.brutal-checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--text-color);
+    border-radius: 0;
+    cursor: pointer;
+}
+.brutal-checkbox:checked {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
 }
 
 .magazine-col {

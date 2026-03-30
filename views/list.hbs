@@ -1,10 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/js/handlebars.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Терминал вакансий | NULLPTR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
-<body class="container">
-    <h1>список</h1>
+<body>
+
+    <nav class="d-flex justify-content-between align-items-center px-5 py-3 brutal-border-bottom bg-transparent">
+        <a class="brand-font fs-3 text-uppercase fw-bold text-dark text-decoration-none" href="/">
+            { NULL<span class="text-accent">PTR</span> }
+        </a>
+        <div class="d-flex align-items-center gap-4">
+            <a href="#" class="brand-font fw-bold text-uppercase text-dark text-decoration-none">Все вакансии</a>
+            <a href="#" class="btn rounded-0 brutal-border brutal-shadow fw-bold text-uppercase brand-font text-dark">Для компаний</a>
+        </div>
+    </nav>
+
+    <header class="px-5 py-4 brutal-border-bottom">
+        <h1 class="display-4 brand-font text-uppercase fw-bold mb-0">Терминал вакансий</h1>
+    </header>
+
+    <main class="d-flex">
+        
+        <aside class="p-5 brutal-border-end" style="width: 350px; flex-shrink: 0;">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="mb-5">
+                    <input type="text" class="form-control rounded-0 brutal-border bg-transparent p-3 brand-font mb-3" placeholder="Поиск по стеку или должности...">
+                    <button class="btn btn-dark rounded-0 brutal-border brutal-shadow w-100 fw-bold text-uppercase brand-font py-3">Искать</button>
+                </div>
+
+                <div class="mb-5">
+                    <h4 class="brand-font text-uppercase fw-bold brutal-border-bottom pb-2 mb-4">Грейд</h4>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <input class="form-check-input brutal-checkbox m-0" type="checkbox" id="mid">
+                        <label class="fw-bold mt-1" for="mid">Middle</label>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <input class="form-check-input brutal-checkbox m-0" type="checkbox" id="sen" checked>
+                        <label class="fw-bold mt-1" for="sen">Senior</label>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <input class="form-check-input brutal-checkbox m-0" type="checkbox" id="lead">
+                        <label class="fw-bold mt-1" for="lead">Lead</label>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <h4 class="brand-font text-uppercase fw-bold brutal-border-bottom pb-2 mb-4">Формат</h4>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <input class="form-check-input brutal-checkbox m-0" type="checkbox" id="rem" checked>
+                        <label class="fw-bold mt-1" for="rem">Remote</label>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <input class="form-check-input brutal-checkbox m-0" type="checkbox" id="off">
+                        <label class="fw-bold mt-1" for="off">Office</label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="p-5 flex-grow-1">
+            
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <span class="brand-font text-uppercase fw-bold fs-5">Найдено: 3</span>
+                <select class="form-select rounded-0 brutal-border bg-transparent brand-font fw-bold w-auto cursor-pointer">
+                    <option selected>Новые сверху</option>
+                    <option value="1">Зарплата: по убыванию</option>
+                </select>
+            </div>
+
+            <div class="card rounded-0 brutal-border brutal-shadow mb-4 p-4 bg-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h3 class="h4 brand-font text-uppercase fw-bold mb-2">Senior Frontend Engineer</h3>
+                        <div class="fw-bold mb-3">
+                            <span class="text-dark">FinTech Core</span> &bull; <span class="text-secondary fw-normal">Москва / Remote</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <span class="badge border border-dark text-dark rounded-0 px-2 py-1 text-uppercase">React</span>
+                            <span class="badge border border-dark text-dark rounded-0 px-2 py-1 text-uppercase">TypeScript</span>
+                            <span class="badge border border-dark text-dark rounded-0 px-2 py-1 text-uppercase">FSD</span>
+                        </div>
+                    </div>
+                    <div class="text-end border-start border-2 border-dark ps-4">
+                        <div class="fs-4 fw-bold text-uppercase text-accent mb-3">350K - 450K ₽</div>
+                        <a href="#" class="btn rounded-0 brutal-border fw-bold text-uppercase brand-font text-dark btn-sm px-4">Детали</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-0 brutal-border brutal-shadow mb-4 p-4 bg-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h3 class="h4 brand-font text-uppercase fw-bold mb-2">Go Backend Developer</h3>
+                        <div class="fw-bold mb-3">
+                            <span class="text-dark">StreamData</span> &bull; <span class="text-secondary fw-normal">Remote</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <span class="badge border border-dark text-dark rounded-0 px-2 py-1 text-uppercase">Golang</span>
+                            <span class="badge border border-dark text-dark rounded-0 px-2 py-1 text-uppercase">PostgreSQL</span>
+                            <span class="badge border border-dark text-dark rounded-0 px-2 py-1 text-uppercase">Kafka</span>
+                        </div>
+                    </div>
+                    <div class="text-end border-start border-2 border-dark ps-4">
+                        <div class="fs-4 fw-bold text-uppercase text-accent mb-3">€4000 - €6000</div>
+                        <a href="#" class="btn rounded-0 brutal-border fw-bold text-uppercase brand-font text-dark btn-sm px-4">Детали</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-0 brutal-border brutal-shadow mb-4 p-4 bg-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h3 class="h4 brand-font text-uppercase fw-bold mb-2">Lead DevOps / SRE</h3>
+                        <div class="fw-bold mb-3">
+                            <span class="text-dark">CloudNexus</span> &bull; <span class="text-secondary fw-normal">Санкт-Петербург / Office</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <span class="badge border border-dark text-dark rounded-0 px-2 py-1 text-uppercase">Terraform</span>
+                            <span class="badge border border-dark text-dark rounded-0 px-2 py-1 text-uppercase">Ansible</span>
+                            <span class="badge border border-dark text-dark rounded-0 px-2 py-1 text-uppercase">AWS</span>
+                        </div>
+                    </div>
+                    <div class="text-end border-start border-2 border-dark ps-4">
+                        <div class="fs-4 fw-bold text-uppercase text-accent mb-3">От 400 000 ₽</div>
+                        <a href="#" class="btn rounded-0 brutal-border fw-bold text-uppercase brand-font text-dark btn-sm px-4">Детали</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="d-flex justify-content-between align-items-center p-5 border-top border-dark border-2 bg-white mt-auto">
+        <div>
+            <h4 class="brand-font text-uppercase fw-bold mb-2">NULLPTR JOB BOARD</h4>
+            <p class="text-secondary mb-0">Строгий отбор. Никаких скрытых условий. Только инженерия и хардкор.</p>
+        </div>
+        <div class="d-flex gap-4">
+            <a href="#" class="brand-font text-uppercase fw-bold text-dark text-decoration-none">About</a>
+            <a href="#" class="brand-font text-uppercase fw-bold text-dark text-decoration-none">Telegram</a>
+            <a href="#" class="brand-font text-uppercase fw-bold text-dark text-decoration-none">Github</a>
+        </div>
+    </footer>
+
 </body>
 </html>
